@@ -1,5 +1,35 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	.jumbotron.text-center
+			h1= title
+			h3= subTitle
+	.container
+		.text-left
+			.page-header
+				h3= judulCol1
+			p= messageCol1_nama
+			p= messageCol1_jk
+			p= messageCol1_tglLahir
+			p= messageCol1_alamat	
+			p Sosial Media :  
+				a(href='https://www.facebook.com/ignatius.a.pradana') Facebook 
+				a(href='https://github.com/igprad/') Github
+		.text-right
+			.page-header
+				h3= judulCol2
+			p Nama Instansi : #{messageCol2_namaInstansi}
+			p Jurusan : #{messageCol2_jurusan}
+			p Konsentrasi : #{messageCol2_konsentrasi}
+			p Angkatan : #{messageCol2_angkatan} 
+		.text-left
+			.page-header
+				h3= judulCol3
+			h4 #{messageCol3_quote}
+			p #{messageCol3_alasan}
+			p #{messageCol3_alasan2}
+			p #{messageCol3_alasan3}
+	.jumbotron.text-center
+		p= footer
+
+			
